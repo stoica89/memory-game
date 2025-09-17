@@ -19,7 +19,7 @@ function onReset() {
     okCount = 0;
     btn.disabled = true;
     mutari = 0;
-    joc.innerHTML = " ";
+    joc.innerHTML = "";
     scor.textContent = "0";
     genereazaCartonase(4,4);
 }
@@ -77,5 +77,5 @@ function genereazaCartonase(l,c) {
     }
 }
 function genereazaNumar(min,max) {
-    return Math.ceil(min = Math.random() * (max - min));
+    return Math.ceil(min + Math.random() * (max - min));
 }
